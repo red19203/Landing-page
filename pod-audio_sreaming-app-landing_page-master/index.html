@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title data-lang="en">AdMars</title>
+	<title data-lang="fr" style="display: none;">AdMars</title>
+	<title data-lang="ar" style="display: none;">أدمارس</title>
+  
+	<!-- 
+		- favicon
+	-->
+	<link rel="shortcut icon" href="./assets/images/radio.png" type="image/x-icon">
+
+	<!-- 
+		- custom css link
+	-->
+	<link rel="stylesheet" href="./assets/css/style.css">
+
+	<!-- 
+		- google font link
+	-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+</head>
+<body id="top" bgcolor="white">
+	<!-- 
+		- #HEADER
+	-->
+	<header>
+
+		<div class="container">
+
+			<h1 class="logo en" data-lang="en">
+				<img src=".\assets\images\radio.png" alt="">
+				<span class="logo-text">AdMars</span>
+			  </h1>
+			  
+			  <h1 class="logo fr" data-lang="fr" style="display: none;">
+				<img src=".\assets\images\radio.png" alt="">
+				<span class="logo-text">AdMars</span>
+			  </h1>
+			  
+			  <h1 class="logo ar" data-lang="ar" style="display: none;">
+				<img src=".\assets\images\radio.png" alt="">
+				<span class="logo-text">أدمارس</span>
+			  </h1>
+			  
+			  
+			  
+
+			<nav class="navbar" data-navbar>
+
+				<button class="nav-close-btn" data-nav-close-btn>
+					<ion-icon name="close-outline"></ion-icon>
+				</button>
+
+				<ul class="navbar-list">
+					<li>
+					  <a href="#home" class="navbar-link" data-lang="en">Home</a>
+					  <a href="#home" class="navbar-link" data-lang="fr" style="display: none;">Accueil</a>
+					  <a href="#home" class="navbar-link" data-lang="ar" style="display: none;">الصفحة الرئيسية</a>
+					</li>
+					
+					<li>
+					  <a href="#download" class="navbar-link" data-lang="en">Download</a>
+					  <a href="#download" class="navbar-link" data-lang="fr" style="display: none;">Télécharger</a>
+					  <a href="#download" class="navbar-link" data-lang="ar" style="display: none;">تحميل</a>
+					</li>
+					
+					<li>
+					  <a href="#features" class="navbar-link" data-lang="en">Features</a>
+					  <a href="#features" class="navbar-link" data-lang="fr" style="display: none;">Fonctionnalités</a>
+					  <a href="#features" class="navbar-link" data-lang="ar" style="display: none;">ميزات</a>
+					</li>
+					
+					<li>
+					  <a href="#overview" class="navbar-link" data-lang="en">Overview</a>
+					  <a href="#overview" class="navbar-link" data-lang="fr" style="display: none;">Aperçu</a>
+					  <a href="#overview" class="navbar-link" data-lang="ar" style="display: none;">نظرة عامة</a>
+					</li>
+					
+					<li>
+					  <a href="#blog" class="navbar-link" data-lang="en">Blog</a>
+					  <a href="#blog" class="navbar-link" data-lang="fr" style="display: none;">Blog</a>
+					  <a href="#blog" class="navbar-link" data-lang="ar" style="display: none;">المدونة</a>
+					</li>
+				  </ul>
+				  
+				  <div class="language-selector">
+					<button class="language" onclick="showLanguage('fr')" data-lang="fr">
+						<span class="language-text">Français</span>
+					</button>
+					<button class="language" onclick="showLanguage('ar')" data-lang="ar">
+						<span class="language-text">العربية</span>
+					</button>
+					<button class="language" onclick="showLanguage('en')" data-lang="en">
+						<span class="language-text">English</span>
+					</button>
+				</div>
+
+
+			</nav>
+
+			<button class="nav-open-btn" data-nav-open-btn>
+				<ion-icon name="menu"></ion-icon>
+			</button>
+
+		</div>
+	  
+	</header>
+	<main>
+
+		<article class="container">
+			<!-- 
+				- #HERO
+			-->
+			<section class="hero" id="home">
+				<div class="hero-content">
+					<h1 class="h1 hero-title">
+					  <span id="fr" class="language-button" onclick="showLanguage('fr')">Le plus puissant diffuseur audio pour appareils</span><br>
+					  <span id="ar" class="language-button" onclick="showLanguage('ar')" style="display: none;">أقوى مشغل صوتي للأجهزة</span><br>
+					  <span id="en" class="language-button" onclick="showLanguage('en')" style="display: none;">The most powerful audio streamer for devices</span>
+					</h1>
+				  </div>
+				
+				  
+				  <button id="download-button" class="btn-primary" onclick="location.href='#download'">Download now</button>
+
+				<figure class="hero-banner"></figure>
+
+			</section>
+			<!-- 
+				- #DOWNLOAD
+			-->
+			<section class="download" id="download">
+
+				<ul class="download-list">
+
+					<li>
+						<a href="#" class="download-link">
+							<ion-icon name="logo-apple"></ion-icon>
+
+							<span data-lang="en">Free download for iPhone</span>
+							<span data-lang="fr" style="display: none;">Téléchargement gratuit pour iPhone</span>
+							<span data-lang="ar" style="display: none;">تحميل مجاني لأجهزة الآيفون</span>
+						</a>
+					</li>
+
+					<li>
+						<video src="./assets/images/son.gif" alt="divider image" loop autoplay poster="./assets/images/son.gif"></video>
+					</li>
+
+					<li>
+						<a href="#" class="download-link">
+							<ion-icon name="logo-android"></ion-icon>
+
+							<span data-lang="en">Free download for Android</span>
+							<span data-lang="fr" style="display: none;">Téléchargement gratuit pour Android</span>
+							<span data-lang="ar">تحميل مجاني لنظام أندرويد</span>
+						</a>
+					</li>
+
+				</ul>
+
+			</section>
+			<!-- 
+				- #FEATURES
+			-->
+			<section class="features" id="features">
+
+				<ul class="features-list">
+					<li class="features-item">
+					  <h3 class="h3 features-item-title">
+						<span data-lang="en">Apple AirPlay</span>
+						<span data-lang="fr" style="display: none;">Apple AirPlay</span>
+						<span data-lang="ar" style="display: none;">آبل إيربلاي</span>
+					  </h3>
+					  <p class="features-item-text">
+						<span data-lang="en">Each time a digital asset is purchased or sold, Sequoir donates a percentage</span>
+						<span data-lang="fr" style="display: none;">À chaque fois qu'un actif numérique est acheté ou vendu, Sequoir fait un don d'un pourcentage</span>
+						<span data-lang="ar" style="display: none;">في كل مرة يتم فيها شراء أو بيع أصول رقمية ، تتبرع Sequoir بنسبة مئوية</span>
+					  </p>
+					</li>
+					<li class="features-item">
+					  <h3 class="h3 features-item-title">
+						<span data-lang="en">SONOS Wireless HiFi</span>
+						<span data-lang="fr" style="display: none;">SONOS Wireless HiFi</span>
+						<span data-lang="ar" style="display: none;">SONOS Wireless HiFi</span>
+					  </h3>
+					  <p class="features-item-text">
+						<span data-lang="en">Each time a digital asset is purchased or sold, Sequoir donates a percentage</span>
+						<span data-lang="fr" style="display: none;">À chaque fois qu'un actif numérique est acheté ou vendu, Sequoir fait un don d'un pourcentage</span>
+						<span data-lang="ar" style="display: none;">في كل مرة يتم فيها شراء أو بيع أصول رقمية ، تتبرع Sequoir بنسبة مئوية</span>
+					  </p>
+					</li>
+				  </ul>
+				  
+
+				<figure class="feature-banner">
+					<img src="./assets/images/feature-banner-bg.png" alt="circle audio waveform" class="feature-banner-bg">
+
+					<img src="./assets/images/feature-banner.png" alt="pod app" class="banner-img">
+				</figure>
+
+				<ul class="features-list">
+					<li class="features-item">
+					  <h3 class="h3 features-item-title">
+						<span data-lang="en">Samsung Multiroom</span>
+						<span data-lang="fr" style="display: none;">Samsung Multiroom</span>
+						<span data-lang="ar" style="display: none;">سامسونج متعدد الغرف</span>
+					  </h3>
+					  <p class="features-item-text">
+						<span data-lang="en">Each time a digital asset is purchased or sold, Sequoir donates a percentage</span>
+						<span data-lang="fr" style="display: none;">À chaque fois qu'un actif numérique est acheté ou vendu, Sequoir fait un don d'un pourcentage</span>
+						<span data-lang="ar" style="display: none;">في كل مرة يتم فيها شراء أو بيع أصول رقمية ، تتبرع Sequoir بنسبة مئوية</span>
+					  </p>
+					</li>
+					<li class="features-item">
+					  <h3 class="h3 features-item-title">
+						<span data-lang="en">Strategy & Design</span>
+						<span data-lang="fr" style="display: none;">Stratégie et Design</span>
+						<span data-lang="ar" style="display: none;">استراتيجية وتصميم</span>
+					  </h3>
+					  <p class="features-item-text">
+						<span data-lang="en">Each time a digital asset is purchased or sold, Sequoir donates a percentage</span>
+						<span data-lang="fr" style="display: none;">À chaque fois qu'un actif numérique est acheté ou vendu, Sequoir fait un don d'un pourcentage</span>
+						<span data-lang="ar" style="display: none;">في كل مرة يتم فيها شراء أو بيع أصول رقمية ، تتبرع Sequoir بنسبة مئوية</span>
+					  </p>
+					</li>
+				  </ul>
+				  
+
+			</section>
+			<!-- 
+				- #OVERVIEW
+			-->
+			<section class="overview" id="overview">
+
+				<div class="overview-card">
+
+					<figure class="overview-banner">
+						<img src="./assets/images/overview-banner.png" alt="overview banner">
+					</figure>
+
+					<div class="overview-content">
+						<h2 class="h2 overview-title">
+						  <span data-lang="en">Enjoy your music everywhere!</span>
+						  <span data-lang="fr" style="display: none;">Profitez de votre musique partout !</span>
+						  <span data-lang="ar" style="display: none;">استمتع بموسيقاك في كل مكان!</span>
+						</h2>
+						<p class="overview-text">
+						  <span data-lang="en">Each time a digital asset is purchased or sold, Sequoir donates a percentage of the fees back into the development</span>
+						  <span data-lang="fr" style="display: none;">Chaque fois qu'un actif numérique est acheté ou vendu, Sequoir fait un don d'un pourcentage des frais pour le développement</span>
+						  <span data-lang="ar" style="display: none;">في كل مرة يتم فيها شراء أو بيع أصول رقمية ، تتبرع Sequoir بنسبة مئوية من الرسوم مرة أخرى في التطوير</span>
+						</p>
+						<ul class="overview-list">
+						  <li class="overview-item">
+							<ion-icon name="wifi"></ion-icon>
+							<span data-lang="en">Works exactly like original <strong>Apple AirPlay</strong></span>
+							<span data-lang="fr" style="display: none;">Fonctionne exactement comme <strong>Apple AirPlay</strong> d'origine</span>
+							<span data-lang="ar" style="display: none;">يعمل تمامًا مثل <strong>Apple AirPlay</strong> الأصلي</span>
+						  </li>
+						  <li class="overview-item">
+							<ion-icon name="musical-notes"></ion-icon>
+							<span data-lang="en"><strong>AirAudio recognizes</strong> if you are listening to your music</span>
+							<span data-lang="fr" style="display: none;"><strong>AirAudio reconnaît</strong> si vous écoutez votre musique</span>
+							<span data-lang="ar" style="display: none;"><strong>AirAudio يتعرف</strong> إذا كنت تستمع إلى موسيقاك</span>
+						  </li>
+						  <li class="overview-item">
+							<ion-icon name="star"></ion-icon>
+							<span data-lang="en"><strong>Create shortcuts</strong> for your favorite receivers</span>
+							<span data-lang="fr" style="display: none;"><strong>Créez des raccourcis</strong> pour vos récepteurs préférés</span>
+							<span data-lang="ar" style="display: none;"><strong>أنشئ اختصارات</strong> لمستقبلاتك المفضلة</span>
+						  </li>
+						</ul>
+					  </div>
+					  
+
+				</div>
+
+			</section>
+			<!-- 
+				- #BLOG
+			-->
+			<section class="blog" id="blog">
+				<h2 class="h2 blog-title" data-lang="en">Latest Blog & Stories</h2>
+				<h2 class="h2 blog-title" data-lang="fr" style="display: none;">Derniers articles de blog et histoires</h2>
+				<h2 class="h2 blog-title" data-lang="ar" style="display: none;">أحدث مقالات المدونة والقصص</h2>
+			  
+				<ul class="blog-list">
+				  <li>
+					<a href="#" class="blog-post">
+					  <figure class="blog-banner">
+						<img src="./assets/images/blog-1.jpg" alt="See How People Are Using Your Website With Hotjar">
+						<time datetime="2022-02-05">05 Fab, 2022</time>
+					  </figure>
+			  
+					  <div class="blog-content">
+						<h3 class="h3 blog-post-title" data-lang="en">See How People Are Using Your Website With Hotjar</h3>
+						<h3 class="h3 blog-post-title" data-lang="fr" style="display: none;">Découvrez comment les gens utilisent votre site Web avec Hotjar</h3>
+						<h3 class="h3 blog-post-title" data-lang="ar" style="display: none;">انظر كيف يستخدم الناس موقع الويب الخاص بك مع Hotjar</h3>
+			  
+						<p class="blog-post-text" data-lang="en">
+						  Each time a digital asset is purchased or sold, Sequoir donates a percentage
+						</p>
+						<p class="blog-post-text" data-lang="fr" style="display: none;">
+						  Chaque fois qu'un actif numérique est acheté ou vendu, Sequoir fait un don d'un pourcentage
+						</p>
+						<p class="blog-post-text" data-lang="ar" style="display: none;">
+						  في كل مرة يتم فيها شراء أو بيع أصل رقمي ، تتبرع Sequoir بنسبة مئوية
+						</p>
+					  </div>
+					</a>
+				  </li>
+
+					<li>
+						<a href="#" class="blog-post">
+
+							<figure class="blog-banner">
+								<img src="./assets/images/blog-2.jpg" alt="5 Tips to Write Your Own Website Copy">
+
+								<time datetime="2022-02-06">06 Fab, 2022</time>
+							</figure>
+
+							<div class="blog-content">
+								<h3 class="h3 blog-post-title" data-lang="en">5 Tips to Write Your Own Website Copy</h3>
+								<h3 class="h3 blog-post-title" data-lang="fr" style="display: none;">5 conseils pour rédiger votre propre texte de site Web</h3>
+								<h3 class="h3 blog-post-title" data-lang="ar" style="display: none;">5 نصائح لكتابة نص الموقع الخاص بك</h3>
+								<p class="blog-post-text" data-lang="en">
+								  Each time a digital asset is purchased or sold, Sequoir donates a percentage
+								</p>
+								<p class="blog-post-text" data-lang="fr" style="display: none;">
+								  Chaque fois qu'un actif numérique est acheté ou vendu, Sequoir fait un don d'un pourcentage
+								</p>
+								<p class="blog-post-text" data-lang="ar" style="display: none;">
+								  في كل مرة يتم فيها شراء أو بيع أصل رقمي ، تتبرع Sequoir بنسبة مئوية
+								</p>
+							  </div>
+
+						</a>
+					</li>
+
+					<li>
+						<a href="#" class="blog-post">
+
+							<figure class="blog-banner">
+								<img src="./assets/images/blog-3.jpg" alt="5 Brilliant Apps That Will Make Your Life Better">
+
+								<time datetime="2022-02-10">10 Fab, 2022</time>
+							</figure>
+
+							<div class="blog-content">
+								<h3 class="h3 blog-post-title" data-lang="en">5 Brilliant Apps That Will Make Your Life Better</h3>
+								<h3 class="h3 blog-post-title" data-lang="fr" style="display: none;">5 applications brillantes qui amélioreront votre vie</h3>
+								<h3 class="h3 blog-post-title" data-lang="ar" style="display: none;">5 تطبيقات رائعة ستجعل حياتك أفضل</h3>
+								<p class="blog-post-text" data-lang="en">
+								  Each time a digital asset is purchased or sold, Sequoir donates a percentage
+								</p>
+								<p class="blog-post-text" data-lang="fr" style="display: none;">
+								  Chaque fois qu'un actif numérique est acheté ou vendu, Sequoir fait un don d'un pourcentage
+								</p>
+								<p class="blog-post-text" data-lang="ar" style="display: none;">
+								  في كل مرة يتم فيها شراء أو بيع أصل رقمي ، تتبرع Sequoir بنسبة مئوية
+								</p>
+							  </div>
+
+						</a>
+					</li>
+
+				</ul>
+
+			</section>
+
+		</article>
+
+	</main>
+	<!-- 
+		- #FOOTER
+	-->
+	<footer>
+
+		<div class="container">
+
+			<div class="footer-brand">
+
+				<a href="#" class="logo">
+					<img src="https://cdn.discordapp.com/attachments/1115000246452363450/1116358818729820260/radio.png" alt="Pod logo">
+				</a>
+
+				<br><br>
+				<p>Follow us on</p>
+
+				<ul class="social-list">
+
+					<li>
+						<a href="https://twitter.com/codewithsadee" target="_blank" class="social-link">
+							<ion-icon name="logo-twitter"></ion-icon>
+						</a>
+					</li>
+
+					<li>
+						<a href="https://instagram.com/codewithsadee" target="_blank" class="social-link">
+							<ion-icon name="logo-instagram"></ion-icon>
+						</a>
+					</li>
+
+				</ul>
+
+			</div>
+
+			<div class="footer-link-box">
+
+				<ul class="footer-list">
+
+					<li>
+						<h3 class="h5 footer-item-title">Resources</h3>
+					</li>
+
+					<li>
+						<a href="#" class="footer-link">Terms & Conditions</a>
+					</li>
+
+					<li>
+						<a href="#" class="footer-link">Blog</a>
+					</li>
+
+
+
+					<li>
+						<a href="#" class="footer-link">Features</a>
+					</li>
+
+
+				</ul>
+
+				<div class="footer-btn-group">
+					<a href="#">
+						<img src="./assets/images/footer-1.png" alt="apple store">
+					</a>
+
+					<a href="#">
+						<img src="./assets/images/footer-2.png" alt="google play store">
+					</a>
+				</div>
+
+			</div>
+
+		</div>
+
+		<p class="copyright">&copy; Copyrights 2023 AdMars All rights reserved.</p>
+
+	</footer>
+	<!-- 
+		- #GO TO TOP
+	-->
+	<a href="#top" class="go-top" data-go-top>
+		<ion-icon name="chevron-up"></ion-icon>
+	</a>
+
+	<!-- 
+		- custom js link
+	-->
+	<script src="./assets/js/script.js"></script>
+	<!-- 
+		- ionicon link
+	-->
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
